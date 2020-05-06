@@ -47,6 +47,18 @@ Cinema.prototype.findGenre = function (searchGenre){
   return result;
 };
 
+Cinema.prototype.findYear = function (theYear){
+  const films = this.films;
+  let result = []
+  films.forEach((film) => {
+    if(film.year === theYear){
+      result.push(film);
+    }
+  });
+  return result;
+};
+
+
 
 // Park.prototype.findBySpecies = function (species) {
 //   const foundDinosaurs = [];
