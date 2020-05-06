@@ -48,8 +48,9 @@ describe('Cinema', function () {
     const actual = cinema.findYear(2017);
     assert.deepStrictEqual(actual, [bladeRunner, dunkirk, trainspotting]);
   });
-  xit('should be able to check whether there are no films from a particular year', function () {
-    
+  it('should be able to check whether there are no films from a particular year', function () {
+    const actual = cinema.findNoYear(19820);
+    assert.deepStrictEqual(actual, "No films made this year");
   });
   xit('should be able to check whether all films are over a particular length', function () {
     

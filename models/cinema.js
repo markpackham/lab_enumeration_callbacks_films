@@ -58,6 +58,14 @@ Cinema.prototype.findYear = function (theYear){
   return result;
 };
 
+Cinema.prototype.findNoYear = function (nonYear) {
+  const noYear = this.findYear(nonYear);
+    if (noYear.length === 0) {
+      return "No films made this year";
+    };
+    
+}
+
 
 
 // Park.prototype.findBySpecies = function (species) {
