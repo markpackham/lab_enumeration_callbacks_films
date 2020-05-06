@@ -63,7 +63,17 @@ Cinema.prototype.findNoYear = function (nonYear) {
     if (noYear.length === 0) {
       return "No films made this year";
     };
-    
+}
+
+Cinema.prototype.lengthChecker = function (checkLength){
+  const films = this.films;
+  let result = []
+  films.forEach((film) => {
+    if(film.length > checkLength){
+      result.push(film);
+    }
+  });
+  return result;
 }
 
 

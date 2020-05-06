@@ -52,8 +52,9 @@ describe('Cinema', function () {
     const actual = cinema.findNoYear(19820);
     assert.deepStrictEqual(actual, "No films made this year");
   });
-  xit('should be able to check whether all films are over a particular length', function () {
-    
+  it('should be able to check whether all films are over a particular length', function () {
+    const actual = cinema.lengthChecker(160)
+    assert.deepStrictEqual(actual, [bladeRunner]);
   });
   xit('should be able to calculate total running time of all films', function () {
     
